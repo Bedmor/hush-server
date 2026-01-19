@@ -21,10 +21,14 @@ app.get('/', (req, res) => {
     res.send('Quiet Map API Service');
 });
 
-if (require.main === module) {
+const startServer = () => {
   app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
   });
+};
+
+if (require.main === module && !process.env.VERCEL) {
+  startServer();
 }
 
 export { app };
