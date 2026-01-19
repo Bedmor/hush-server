@@ -1,7 +1,7 @@
 {
   "name": "quiet-map-server",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "start": "ts-node -r dotenv/config src/index.ts",
     "dev": "nodemon src/index.ts",

@@ -31,4 +31,5 @@ if (require.main === module && !process.env.VERCEL) {
   startServer();
 }
 
+export default app;
 export { app };
